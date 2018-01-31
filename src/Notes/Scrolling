@@ -1,0 +1,17 @@
+We can use scrolling in different ways:
+
+1. Sending sendkey on a textbox only, we can not send a sendkeys on a button, label etc
+
+2. Using javascript
+		 
+	JavascriptExecutor js=(JavascriptExecutor)driver;  //Casting
+	//Object a ="onkar";
+	//String b=(String)a;
+	//Casting means changing one data type to another
+	js.executeScript("window.scrollBy(0, 200)");  
+		 
+3. Actions
+		 
+	Actions act=new Actions(driver);
+	act.sendKeys(Keys.PAGE_DOWN).build().perform();
+	only perform will not work so we need to use build.perform

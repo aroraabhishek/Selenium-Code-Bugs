@@ -1,0 +1,14 @@
+Implicit 
+		driver.manage().timeouts().implicitWait(60,TimeUnit.SECONDS)
+		This will wait for all elements on page for maximum 60 seconds (for all driver)
+		But now to use this because it will randomly not search elements.
+		
+Explicit (to use)
+		It is like Thread.sleep(5000);
+		wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector(selector)));
+		
+FluentWait (very minimum used)
+		We can also give polling time (it will check the element in every interval)
+		TIMEOUT(30,SECONDS)
+		pollingEvery(5,SECONDS)
+		It will wait for 30 seconds maximum while searching for element every 5 seconds (Max 6 times)
