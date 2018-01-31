@@ -1,0 +1,8 @@
+how to control resolution of system:
+
+1. Using Javascript
+	
+	JavascriptExecutor js=(JavascriptExecutor)driver;  //Casting
+	js.executeScript("document.body.style.zoom='100%'");
+
+2. Using sendkey using combination of keys
