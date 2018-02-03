@@ -1,0 +1,11 @@
+To take SS
+
+//Learn this 3 lines
+TakesScreenshot ts=(TakesScreenshot)driver;
+File screen=ts.getScreenshotsAsOutputType.FILE));
+FileUtils.copyFile(screen, new File("file name"));
+
+
+Homework:
+Choose file from system
+image.onine-convert.com

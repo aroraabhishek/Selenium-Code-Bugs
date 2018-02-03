@@ -1,0 +1,37 @@
+Ways are:
+
+1. Window popup
+2. Alert
+3. iFrame
+4. Custom Popup
+
+iFrame:
+iFrame means embedding a page in another page
+First you need to go to iframe and then perform the activity
+iframe can be found by : id/name/css, index, Webelement(findeement) 
+
+Alert:
+accept or dismiss
+
+Window popup(on Naukri):
+Window handle
+String mmainwindow=driver.getWindowHandle(); // this will print only the main window session
+
+Set<String> allWindow=driver.getWindowHandles();
+It is unordered so main window can be anything.
+for(String s: allWindow){
+sysout(s);
+}
+
+for(String s: allWindow){
+driver.switchto().window(s);
+sysout(driver.getTitle()))
+if(!s.equals(mainwindow))){
+driver.close();
+}
+}
+driver.switchto.wiindow(mainwindow);
+
+when to use defaultcontent 
+defaultcontent, it is used when coming out to default age from iFrame.(only for frame)
+
