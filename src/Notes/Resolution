@@ -1,4 +1,4 @@
-how to control resolution of system:
+Selenium WebDriver allows resizing and maximizing window natively from its API. We use 'Dimension' class to resize the window.
 
 1. Using Javascript
 	
@@ -6,3 +6,30 @@ how to control resolution of system:
 	js.executeScript("document.body.style.zoom='100%'");
 
 2. Using sendkey using combination of keys
+
+Ex:
+Lets take the help of Selenium WebDrivers Dimension Class and declare object say 'd' by initializing it with width and height as 
+420X600 as shown below:
+
+Remember, We need to import the statement 'import org.openqa.selenium.Dimension'
+
+import org.openqa.selenium.Dimension;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.annotations.Test;
+public class browser {
+	
+	@Test
+	public void openBrowserwithGivenDimension()
+	{
+
+		WebDriver driver = new FirefoxDriver();
+		driver.navigate().to("http://google.co.in");
+		System.out.println(driver.manage().window().getSize());
+		Dimension d = new Dimension(420,600);
+		//Resize the current window to the given dimension
+		driver.manage().window().setSize(d);
+	}
+}
+We can set the size and perform testing with lower resolution. We can also perform testing on Responsive sites which automatically get adjust 
+based on the browser size

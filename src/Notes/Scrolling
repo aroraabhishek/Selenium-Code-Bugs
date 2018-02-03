@@ -1,4 +1,5 @@
-We can use scrolling in different ways:
+We can scroll the web page using javaScript Executor in the java code.We have taken the below example with three different scenarios of 
+scrolling a webpage.
 
 1. Sending sendkey on a textbox only, we can not send a sendkeys on a button, label etc
 
@@ -15,3 +16,8 @@ We can use scrolling in different ways:
 	Actions act=new Actions(driver);
 	act.sendKeys(Keys.PAGE_DOWN).build().perform();
 	only perform will not work so we need to use build.perform
+
+	
+More info: 
+http://www.seleniumeasy.com/selenium-tutorials/scrolling-web-page-with-selenium-webdriver-using-java
+http://toolsqa.com/selenium-webdriver/scroll-element-view-selenium-javascript/

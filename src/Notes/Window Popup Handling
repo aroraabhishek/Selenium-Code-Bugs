@@ -1,9 +1,12 @@
-Ways are:
+There are many cases, where a application displays multiple windows when you open a website. Those are may be advertisements 
+or may be a kind of information showing on popup windows. We can handle multiple windows using Windows Handlers in selenium webdriver.
 
-1. Window popup
-2. Alert
-3. iFrame
-4. Custom Popup
+	1. Window popup
+	2. Alert
+	3. iFrame
+	4. Custom Popup
+
+More info: http://www.seleniumeasy.com/selenium-tutorials/how-to-handle-windows-popups-using-selenium-webdriver
 
 iFrame:
 iFrame means embedding a page in another page
@@ -34,4 +37,3 @@ driver.switchto.wiindow(mainwindow);
 
 when to use defaultcontent 
 defaultcontent, it is used when coming out to default age from iFrame.(only for frame)
-
