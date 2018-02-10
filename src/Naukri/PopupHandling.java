@@ -1,4 +1,4 @@
-package naukri.com;
+package Naukri;
 
 import java.util.Set;
 

@@ -1,4 +1,4 @@
-package naukri.com;
+package Naukri;
 
 //import java.io.File;
 //import java.util.HashMap;

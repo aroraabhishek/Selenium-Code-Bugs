@@ -1,11 +1,10 @@
-package redbus.in;
+package Redbus;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class redBus_automation {
-
+public class redbus_automate {
 	public static void main(String[] args) throws InterruptedException {
 		System.setProperty("webdriver.chrome.driver","C:\\chromedriver_win32\\chromedriver.exe");
 		System.setProperty("webdriver.gecko.driver", "C:\\geckodriver-v0.19.1-win64\\geckodriver.exe");
@@ -28,6 +27,5 @@ public class redBus_automation {
 		driver.findElement(By.cssSelector(".bnr-message")).getText().contains("Buses in this route have Live Tracking enabled");
 		
 		//for unique number go for epochd
-		
 	}
 }
