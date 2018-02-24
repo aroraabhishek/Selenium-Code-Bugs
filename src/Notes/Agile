@@ -1,0 +1,111 @@
+Agile:
+
+Planning poker
+
+AGILE
+Agile software development refers to a group of software development methodologies based on iterative development, 
+where requirements and solutions evolve through collaboration between self-organizing cross-functional teams. Agile methods 
+or Agile processes generally promote a disciplined project management process that encourages frequent inspection and 
+adaptation, a leadership philosophy that encourages teamwork, self-organization and accountability, a set of engineering 
+best practices intended to allow for rapid delivery of high-quality software, and a business approach that aligns development 
+with customer needs and company goals. Agile development refers to any development process that is aligned with the concepts of 
+the Agile Manifesto. The Manifesto was developed by a group fourteen leading figures in the software industry, and reflects their 
+experience of what approaches do and do not work for software development. Read more about the Agile Manifesto.
+
+SCRUM
+Scrum is a subset of Agile. It is a lightweight process framework for agile development, and the most widely-used one.
+A “process framework” is a particular set of practices that must be followed in order for a process to be consistent with 
+the framework. (For example, the Scrum process framework requires the use of development cycles called Sprints, the XP 
+framework requires pair programming, and so forth.)
+
+“Lightweight” means that the overhead of the process is kept as small as possible, to maximize the amount of productive 
+time available for getting useful work done.
+
+A Scrum process is distinguished from other agile processes by specific concepts and practices, divided into the three 
+categories of Roles, Artifacts, and Time Boxes. These and other terms used in Scrum are defined below. Scrum is most 
+often used to manage complex software and product development, using iterative and incremental practices. Scrum significantly 
+increases productivity and reduces time to benefits relative to classic “waterfall” processes. Scrum processes enable 
+organizations to adjust smoothly to rapidly-changing requirements, and produce a product that meets evolving business goals. 
+An agile Scrum process benefits the organization by helping it to
+-Increase the quality of the deliverables
+-Cope better with change (and expect the changes)
+-Provide better estimates while spending less time creating them
+-Be more in control of the project schedule and state
+
+Benefits to Customer
+Customers find that the vendor is more responsive to development requests. High-value features are developed and 
+delivered more quickly with short cycles, than with the longer cycles favored by classic “waterfall” processes.
+
+Benefits to Vendors
+Vendors reduce wastage by focusing development effort on high-value features, and reduce time-to-market relative to 
+waterfall processes due to decreased overhead and increased efficiency. Improved customer satisfaction translates to 
+better customer retention and more positive customer references.
+
+Benefits to Development Teams
+Team members enjoy development work, and like to see their work used and valued. Scrum benefits Team members by 
+reducing non-productive work (e.g., writing specifications or other artifacts that no one uses), and giving them more 
+time to do the work they enjoy. Team members also know their work is valued, because requirements are chosen to maximize 
+value to customers.
+
+Benefits to Product Managers
+Product Managers, who typically fill the Product Owner role, are responsible for making customers happy by ensuring 
+that development work is aligned with customer needs. Scrum makes this alignment easier by providing frequent 
+opportunities to re-prioritize work, to ensure maximum delivery of value.
+
+Benefits to Project Managers
+Project Managers (and others) who fill the ScrumMaster role find that planning and tracking are easier and 
+more concrete, compared to waterfall processes. The focus on task-level tracking, the use of Burndown Charts to 
+display daily progress, and the Daily Scrum meetings, all together give the Project Manager tremendous awareness about 
+the state of the project at all times. This awareness is key to monitoring the project, and to catching and addressing 
+issues quickly.
+
+Benefits to PMOs and C-Level Executives
+Scrum provides high visibility into the state of a development project, on a daily basis. External stakeholders, 
+such as C-Level executives and personnel in the Project Management Office, can use this visibility to plan more 
+affectively, and adjust their strategies based on more hard information and less speculation.
+
+The three roles defined in Scrum are the ScrumMaster, the Product Owner, and the Team (which consists of Team members). 
+The people who fulfill these roles work together closely, on a daily basis, to ensure the smooth flow of information and 
+the quick resolution of issues.
+
+ScrumMaster
+The ScrumMaster (sometimes written “Scrum Master,” although the official term has no space after “Scrum”) is the keeper 
+of the process. The ScrumMaster is responsible for making the process run smoothly, for removing obstacles that impact 
+productivity, and for organizing and facilitating the critical meetings. The ScrumMasters responsibilities include
+-Removing the barriers between the development Team and the Product Owner so that the Product Owner directly drives development.
+-Teach the Product Owner how to maximize return on investment (ROI), and meet his/her objectives through Scrum.
+-Improve the lives of the development Team by facilitating creativity and empowerment.
+-Improve the productivity of the development Team in any way possible.
+-Improve the engineering practices and tools so that each increment of functionality is potentially shippable.
+-Keep information about the Team’s progress up to date and visible to all parties.
+
+In practical terms, the ScrumMaster needs to understand Scrum well enough to train and mentor the other roles, and 
+educate and assist other stakeholders who are involved in the process. The ScrumMaster should maintain a constant 
+awareness of the status of the project (its progress to date) relative to the expected progress, investigate and 
+facilitate resolution of any roadblocks that hold back progress, and generally be flexible enough to identify and deal 
+with any issues that arise, in any way that is required. The ScrumMaster must protect the Team from disturbance from other
+people by acting as the interface between the two. The ScrumMaster does not assign tasks to Team members, as task 
+assignment is a Team responsibility. The ScrumMaster’s general approach towards the Team is to encourage and 
+facilitate their decision-making and problem-solving capabilities, so that they can work with increasing efficiency and 
+decreasing need for supervision. The goal is to have a team that is not only empowered to make important decisions, but 
+does so well and routinely.
+
+Product Owner
+The Product Owner is the keeper of the requirements. The Product Owner provides the “single source of truth” for 
+the Team regarding requirements and their planned order of implementation. In practice, the Product Owner is the 
+interface between the business, the customers, and their product related needs on one side, and the Team on the 
+other. The Product Owner buffers the Team from feature and bug-fix requests that come from many sources, and is the 
+single point of contact for all questions about product requirements. Product Owner works closely with the team to 
+define the user-facing and technical requirements, to document the requirements as needed, and to determine the order 
+of their implementation. Product Owner maintains the Product Backlog (which is the repository for all of this information), 
+keeping it up to date and at the level of detail and quality the Team requires. The Product Owner also sets the schedule 
+for releasing completed work to customers, and makes the final call as to whether implementations have the features and 
+quality required for release.
+
+Team
+The Team is a self-organizing and cross-functional group of people who do the hands-on work of developing and testing 
+the product. Since the Team is responsible for producing the product, it must also have the authority to make decisions 
+about how to perform the work. The Team is therefore self-organizing: Team members decide how to break work into tasks, 
+and how to allocate tasks to individuals, throughout the Sprint. The Team size should be kept in the range from five to 
+nine people, if possible. (A larger number make communication difficult, while a smaller number leads to low productivity 
+and fragility.) Note: A very similar term, “Scrum Team,” refers to the Team plus the ScrumMaster and Product Owner.
