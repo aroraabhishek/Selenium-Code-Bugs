@@ -36,3 +36,4 @@ public class smokeTest {
 	Assert.assertEquals(k, 200,"Multiplication is incorrect");
 	}
 }
+ 
