@@ -1,0 +1,73 @@
+Selenium Webdriver is a tool for creating automation scripts of web application. Webdriver makes direct calls to browser 
+using each browser’s native support for automation rather than depending on server. Webdriver has introduced advanced User 
+Interactions API, which includes actions such as drag and drop or clicking multiple elements while holding down the Control key.
+
+In order to do action events, you need to use org.openqa.selenium.interactions.Actions class. The Action class is user-facing 
+API for emulating complex user action events. You can directly use this class rather than using the input devices, i.e. Keyboard 
+or Mouse. It Implements builder pattern, in which a complex object is constructed that can be further used to create different 
+representation of same object. In below code, a complex object ‘builder’ is created, which is used to create different 
+actions.handle action events in selenium
+
+Here is the code snippet for using actions:
+
+// Configure the Action
+Actions builder = new Actions(driver);
+
+// To focus on element using webdriver
+builder .moveToElement(element).perform();
+
+// To click on the element to focus
+builder.moveToElement(element).click().perform();
+
+Perform method is used here to execute the action. The sequence of actions should be minimal. There are 2 
+types of actions: Keyboard and Mouse actions.
+
+Keyboard Interactions using Actions API:
+
+In keyboard interaction, normally we consider events such as scrolling the element and focusing on it. With the help of 
+Action API, keyboard interactions are easier now. In Advanced User Interactions API, absolute interaction with element 
+is possible either by clicking on element or sending a Keys.TAB before sending text. The Keyboard interface has three methods:
+
+Void sendKeys(CharSequence… keysToSend) – Similar to the existing sendKeys() method in Webdriver
+Void pressKey- Sends a key press only, without releasing it. Should only be implemented for modifier keys (Control, Alt and Shift)
+Void releaseKey(Keys keyToRelease) – Releases a modifier key
+
+Mouse Interactions using Actions API:
+
+In mouse actions we use current location of the element as a standard. First action will be relative to the location of the 
+standard element, the next action will be relative to the location of the mouse at the end of the last action, etc. The Mouse 
+interface includes the following methods:
+
+Void click (WebElement onElement): Simply click on element
+Void double click (WebElement onElement): Double clicks onElement
+Void mouseDown(WebElement onElement) : Holds down the left mouse button on an element
+Void mouseUp(WebElement onElement) : Releases the mouse button on an element
+Void mouseMove(WebElement onElement) : Move (from the current location ) to another element or Void 
+mosueMove(WebElement onElement ,long xOffset, long yOffset ) : Move (from the current location) to new coordinates
+Void contextClick(WebElement onElement) : Performs a context-click (right click) on an element
+
+If you want to handle drag and drop event, then you can use following code:
+
+Actions builder = new Actions(driver);
+WebElement dragElement=driver.findElement(By.id(“draggable”));
+WebElement dropElement=driver.findElement(By.id(“droppable”));
+
+// To hold the drag element and then move it to drop element location
+Action dragDrop = builder.clickAndHold(dragElement).moveToElement(dropElement).build();
+
+// To Execute the drag and drop Action
+dragDrop.perform();
+
+If you want to click on menu option in mouse hover menu, then follow this code:
+Actions builder = new Actions(driver);
+WebElement menu = driver.findElement(By.id(“menu”));
+WebElement menuoption = driver.findElement(By.id(“menuoption”));
+
+//Move to the main menu option and then sub-option
+Action element= builder.moveToElement(menu).moveToElement(menuoption).build();
+
+// To Execute the Action
+element.perform();
+
+It’s evident from the above examples that using “Actions API” in Webdriver simplifies input interactions. In fact 
+some events can be only handled by Action API e.g. Drag and drop.
